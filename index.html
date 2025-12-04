@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elétrica Express</title>
+
+    <!-- Ícone -->
+    <link rel="icon" href="./IMG/icone.png" type="image/png">
+
+    <!-- Bootstrap (apenas GRID necessário) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Staatliches&family=Nova+Round&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS otimizado -->
+    <link rel="stylesheet" href="./css/site.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <a href="#INICIO" class="logo">
+            <img src="./IMG/logoEletrica (2).png" alt="logo">
+        </a>
+
+        <button class="menu-btn" id="toggleMenu">☰</button>
+
+        <nav class="menu" id="menu">
+            <a href="#INICIO">Início</a>
+            <a href="#SERVICOS">Serviços</a>
+            <a href="#SOBRE">Sobre</a>
+            <a href="#CONTATOS">Contato</a>
+        </nav>
+
+        <a href="#agendeAqui" class="cta-btn">Agende Aqui</a>
+    </header>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+
+    <!-- HERO -->
+    <section class="hero" id="INICIO">
+        <img src="./IMG/logoLaranja.png" alt="logo" class="hero-logo">
+
+        <div class="hero-text">
+            <h1>ELÉTRICA EXPRESS</h1>
+            <p>Energia que <span>Impulsiona o Futuro!</span></p>
+        </div>
+    </section>
+
+
+    <section id="SERVICOS" class="SERVICOS">
+        <div class="nossosServicos">
+            <h2>Nossos <b>Serviços</b></h2>
+        </div>
+        <br><br>
+        <!-- ---------------------------------------- -->
+        <div class="projetos">
+
+            <div>
+                <img class="servicos-img" src="./IMG/eletrica.jpg" alt="foto-eletrica">
+                <h3 class="titulo-projeto">Elétrica</h3>
+                <p class="p1"> Tomadas; <br> Residêncial; <br> Predial; <br> projetos.
+                </p>
+            </div>
+            <!-- ------------------------------------------------------------ -->
+            <div>
+                <img class="servicos-img" src="./IMG/reparo.jpg" alt="foto-reparos">
+                <h3 class="titulo-projeto">Reparos</h3>
+                <p class="p1">Manutenção; <br>Concertos;<br>Diagnóstico de falhas; <br>Iluminação.</p>
+            </div>
+
+            <div>
+                <img class="servicos-img" src="./IMG/instalações.jpg" alt="foto-instalacao">
+                <h3 class="titulo-projeto">Instalações</h3>
+                <p class="p1">Led;<br>Lâmpada <br>chuveiros; <br>Refletores.</p>
+            </div>
+
+            <div>
+                <img class="servicos-img" src="./IMG/pintura.jpg" alt="foto-pintura">
+                <h3 class="titulo-projeto">Pintura</h3>
+                <p class="p1">Perosnalizadas;<br>Residencial <br>Predial.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="agendeAqui">
+        <form action="https://api.staticforms.dev/submit" method="POST">
+            <fieldset class="horario-fieldset">
+                <legend class="legenda">Atendimentos</legend>
+
+                <p class="p-orçamento">Horário</p>
+                <input type="time" id="horario">
+                <label for="hora"></label>
+
+                <br><br>
+
+                <p class="p-orçamento">Selecione o dia que deseja</p>
+                <label for="data"></label>
+                <input type="date" id="data">
+                <br><br>
+            </fieldset>
+            <br>
+
+            <fieldset class="servicos-fieldset">
+                <legend>Serviços</legend>
+                <label for="eletrica" class="botao">
+                    <input type="checkbox" name="Eletrica" id="eletrica" volume="eletrica">
+                    Elétrica
+                </label>
+                <br><br>
+
+                <label for="reparos" class="botao">
+                    <input type="checkbox" name="Reparos" id="reparos" volume="reparos">
+                    Reparos
+                </label>
+                <br><br>
+
+                <label for="instalacao" class="botao">
+                    <input type="checkbox" name="Instalacao" id="instalacao" volume="instalacao">
+                    Instalação
+                </label>
+                <br><br>
+
+                <label for="pintura" class="botao">
+                    <input type="checkbox" name="Pintura" id="pintura" volume="pintura">
+                    Pintura
+                </label>
+                <br><br>
+
+                <label for="outros" class="botao">Outros...
+                    <input type="text" name="Outros" id="outros" volume="outros">
+                </label>
+                <br><br>
+            </fieldset>
+
+            <fieldset class="endereco">
+                <legend>Informe seu endereço</legend>
+                <label for="localizacao">Localização</label>
+                <input type="text" name="endereco" id="localizacao">
+                <br><br>
+            </fieldset>
+
+            <input type="hidden" name="apiKey" value="sf_9bc33ggg37hh17jimgi732fn">
+            <button type="submit" class="enviar">Enviar</button>
+        </form>
+
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="SOBRE">
+        <h2>SOBRE A <b>ELÉTRICA EXPRESS</b></h2>
+
+        <div class="sobre-grid">
+            <img src="./IMG/fabinho.jpeg" class="foto-sobre">
+
+            <div class="sobre-texto">
+                <h4>Quem é a Elétrica Express? ⚡</h4>
+                <p>
+                    Meu nome é Fabiano Gonçalves Teixeira, sou técnico em elétrica desde 2021.
+                    Trabalho com dedicação para garantir segurança e conforto para cada cliente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="carousel-container">
+        <button class="arrow left">&#10094;</button>
+
+        <div class="carousel">
+            <div class="card"><img src="./IMG/feedback1.png" alt="1"></div>
+            <div class="card"><img src="./IMG/feedback2.png" alt="2"></div>
+            <div class="card"><img src="./IMG/feedback3.png" alt="3"></div>
+            <div class="card"><img src="./IMG/feedback4.png" alt="4"></div>
+            <div class="card"><img src="./IMG/feedback5.png" alt="5"></div>
+            <div class="card"><img src="./IMG/feedback6.png" alt="6"></div>
+        </div>
+
+        <button class="arrow right">&#10095;</button>
+    </div>
+
+    <!-- CONTATOS -->
+    <section class="contatos" id="CONTATOS">
+        <h3>Entre em contato</h3>
+
+        <div class="contatos-grid">
+
+            <a href="https://wa.me/555193070573" target="_blank">
+                <img src="./IMG/whatsapp.png" width="45">
+                WhatsApp
+            </a>
+
+            <a href="https://www.instagram.com/eletrica.express_/" target="_blank">
+                <img src="./IMG/instagram.png" width="45">
+                Instagram
+            </a>
+
+            <a href="mailto:eletricaexpressft@gmail.com">
+                <img src="./IMG/envelope.png" width="45">
+                eletricaexpressft@gmail.com
+            </a>
+
+        </div>
+
+        <form action="https://formsubmit.co/eletricaexpressft@gmail.com" method="POST" class="feedback">
+            <textarea name="Feedback" placeholder="Deixe seu depoimento..." required></textarea>
+            <button type="submit" class="enviar">Enviar</button>
+        </form>
+
+    </section>
+
+    <footer>
+        ⚡ Elétrica Express © 2025 — Todos os direitos reservados
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/555193070573?text=Ol%C3%A1%2C+Estou+interessado+nos+servi%C3%A7os+da+El%C3%A9trica+Express%21"
+        target="_blank" class="whatsapp-float">
+        <img src="./IMG/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="./site.js"></script>
+
+</body>
+
+</html>
